@@ -2,7 +2,10 @@
 
 <section id="main-content" class="section hero" {{#if settings.hero_background_image}}style="background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url({{settings.hero_background_image}});"{{/if}}>
   <div class="hero-inner">
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
+    <div class="hero-welcome">
+      <h2 class="hero-title">Welcome to WebBeds Support</h2>
+      <p class="hero-subtitle">Find answers, get help, and discover solutions</p>
+    </div>
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
       <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
       <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
