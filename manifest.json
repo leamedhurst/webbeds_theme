@@ -25,25 +25,6 @@
       ]
     },
     {
-      "label": "Fonts",
-      "variables": [
-        {
-          "identifier": "text_font",
-          "type": "font",
-          "description": "Body text font family.",
-          "label": "Text font",
-          "value": "'Inter', sans-serif"
-        },
-        {
-          "identifier": "heading_font",
-          "type": "font",
-          "description": "Heading font family.",
-          "label": "Heading font",
-          "value": "'Inter', 'Inter', sans-serif"
-        }
-      ]
-    },
-    {
       "label": "Header",
       "variables": [
         {
@@ -51,14 +32,14 @@
           "type": "color",
           "description": "Background color for the header/nav bar.",
           "label": "Header background color",
-          "value": "#131929"
+          "value": "#eef1f8"
         },
         {
           "identifier": "header_link_color",
           "type": "color",
-          "description": "Color of links inside the header.",
+          "description": "Color of nav links inside the header.",
           "label": "Header link color",
-          "value": "#ffffff"
+          "value": "#0d1f5c"
         }
       ]
     },
