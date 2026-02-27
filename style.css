@@ -4901,32 +4901,107 @@ h1, h2, h3, h4, h5, h6,
   background-color: var(--webbeds-bg-white);
   border-bottom: 1px solid var(--webbeds-border-light);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 0;
 }
 
-.header .logo {
-  height: 40px;
-  width: auto;
-}
-
-.header-nav {
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Navigation Links */
-.header a,
-.user-nav a {
+/* Logo Styling */
+.header .logo {
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.header .logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* Desktop Navigation Wrapper */
+.nav-wrapper-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Main Navigation (WebBeds Links) */
+.main-nav {
+  display: flex;
+  flex: 1;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.main-nav-list li {
+  margin: 0;
+}
+
+.main-nav-list a {
   color: var(--webbeds-text-gray);
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  display: block;
 }
 
-.header a:hover,
-.user-nav a:hover {
+.main-nav-list a:hover {
   color: var(--webbeds-red);
+}
+
+/* User Navigation (Zendesk Links) */
+.user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-nav-list li {
+  margin: 0;
+}
+
+.user-nav-list a {
+  color: var(--webbeds-text-gray);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.user-nav-list a:hover {
+  color: var(--webbeds-red);
+}
+
+/* User Info Dropdown */
+.user-info {
+  margin-left: 1rem;
 }
 
 /* ============================================
@@ -4934,12 +5009,14 @@ h1, h2, h3, h4, h5, h6,
    ============================================ */
 .hero {
   background-color: #f5f5f5;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url($hero_background_image);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 4rem 0;
   border-bottom: 3px solid var(--webbeds-red);
+  min-height: 350px;
+  display: flex;
+  align-items: center;
 }
 
 .hero h1 {

@@ -4,20 +4,21 @@
   <div class="header-inner">
     <div class="logo">
       {{#link 'help_center'}}
-        <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-        {{#if settings.show_brand_name}}
-          <span aria-hidden="true">{{help_center.name}}</span>
+        {{#if settings.logo}}
+          <img src="{{settings.logo}}" alt="{{help_center.name}}" />
+        {{else}}
+          <img src="{{asset 'logo.svg'}}" alt="{{help_center.name}}" />
         {{/if}}
       {{/link}}
     </div>
 
     <div class="nav-wrapper-desktop">
-      <!-- Visy Main Navigation -->
+      <!-- WebBeds Main Navigation -->
       <nav class="main-nav" aria-label="Main navigation">
         <ul class="main-nav-list">
-          <li><a href="https://www.visy.com/about">About</a></li>
-          <li><a href="https://www.visy.com/solutions">Solutions</a></li>
-          <li><a href="https://www.visy.com/contact">Contact</a></li>
+          <li><a href="https://www.webbeds.com/about">About</a></li>
+          <li><a href="https://www.webbeds.com/destinations">Destinations</a></li>
+          <li><a href="https://www.webbeds.com/contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -25,7 +26,6 @@
       <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
         <ul class="user-nav-list">
           <li>{{link 'community'}}</li>
-          <li>{{link 'service_catalog'}}</li>
           <li>{{link 'new_request' class='submit-a-request button-primary'}}</li>
           {{#unless signed_in}}
             <li>
@@ -101,9 +101,9 @@
         <li class="item">{{link 'new_request' class='submit-a-request'}}</li>
         <li class="item">{{link 'service_catalog'}}</li>
         <li class="nav-divider"></li>
-        <li class="item"><a href="https://www.visy.com/about">About</a></li>
-        <li class="item"><a href="https://www.visy.com/solutions">Solutions</a></li>
-        <li class="item"><a href="https://www.visy.com/contact">Contact</a></li>
+        <li class="item"><a href="https://www.webbeds.com/about">About</a></li>
+        <li class="item"><a href="https://www.webbeds.com/destinations">Destinations</a></li>
+        <li class="item"><a href="https://www.webbeds.com/contact">Contact</a></li>
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">
