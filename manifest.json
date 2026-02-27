@@ -1,6 +1,6 @@
 {
-  "name": "VisyTheme",
-  "author": "Visy",
+  "name": "WebBedsTheme",
+  "author": "WebBeds",
   "version": "1.0.0",
   "api_version": 4,
   "default_locale": "en-us",
@@ -13,7 +13,7 @@
           "type": "color",
           "description": "Brand color for links, buttons and accents.",
           "label": "Brand color",
-          "value": "#004aad"
+          "value": "#dc140a"
         },
         {
           "identifier": "brand_text_color",
@@ -27,28 +27,28 @@
           "type": "color",
           "description": "Main text color.",
           "label": "Text color",
-          "value": "#131929"
+          "value": "#313131"
         },
         {
           "identifier": "link_color",
           "type": "color",
           "description": "Link and interactive element color.",
           "label": "Link color",
-          "value": "#004aad"
+          "value": "#dc140a"
         },
         {
           "identifier": "hover_link_color",
           "type": "color",
           "description": "Link hover color.",
           "label": "Link hover color",
-          "value": "#0060d6"
+          "value": "#b10f08"
         },
         {
           "identifier": "visited_link_color",
           "type": "color",
           "description": "Visited link color.",
           "label": "Visited link color",
-          "value": "#004aad"
+          "value": "#dc140a"
         },
         {
           "identifier": "background_color",
@@ -141,14 +141,14 @@
           "type": "color",
           "description": "Background color for the header/nav bar.",
           "label": "Header background color",
-          "value": "#eef1f8"
+          "value": "#ffffff"
         },
         {
           "identifier": "header_link_color",
           "type": "color",
           "description": "Color of nav links inside the header.",
           "label": "Header link color",
-          "value": "#0d1f5c"
+          "value": "#475467"
         }
       ]
     },
@@ -195,14 +195,14 @@
           "type": "color",
           "description": "Background color of the home page hero area (shows behind image).",
           "label": "Hero background color",
-          "value": "#0a1628"
+          "value": "#f5f5f5"
         },
         {
           "identifier": "hero_text_color",
           "type": "color",
           "description": "Text color inside the hero area.",
           "label": "Hero text color",
-          "value": "#ffffff"
+          "value": "#313131"
         },
         {
           "identifier": "instant_search",
@@ -344,14 +344,14 @@
           "type": "color",
           "description": "Background color of the footer.",
           "label": "Footer background color",
-          "value": "#131929"
+          "value": "#313131"
         },
         {
           "identifier": "footer_link_color",
           "type": "color",
           "description": "Color of links in the footer.",
           "label": "Footer link color",
-          "value": "#3b8be8"
+          "value": "#ffffff"
         }
       ]
     }
